@@ -39,7 +39,7 @@ public   class  Account {
 
 	}
 
-	public boolean withdraw(double amount) {
+	public boolean withdrawWithLimit(double amount) {
 
 		if (balance>=amount+DAILY_LIMIT ) {
 			balance-=amount;
