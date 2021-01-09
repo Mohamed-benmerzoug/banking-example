@@ -3,7 +3,7 @@
 public   class  Account {
 
 
-	public  String ID;
+	public  String custumerID;
 
 
 
@@ -13,7 +13,7 @@ public   class  Account {
 
 	public Account(String id, double initial) {
 
-		this.ID=id;
+		this.custumerID=id;
 		this.balance=initial;
 	}
 
@@ -27,7 +27,7 @@ public   class  Account {
 
 
 	public void display() {
-		System.out.println("Account: "+ID+ " Balance ="+balance);
+		System.out.println("Account: "+custumerID+ " Balance ="+balance);
 		System.out.println("LIMIT ="+DAILY_LIMIT);
 	}
 
