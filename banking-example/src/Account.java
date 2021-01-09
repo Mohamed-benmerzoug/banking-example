@@ -28,6 +28,7 @@ public   class  Account {
 
 	public void display() {
 		System.out.println("Account: "+ID+ " Balance ="+balance);
+		System.out.println("LIMIT ="+DAILY_LIMIT);
 	}
 
 
@@ -40,12 +41,13 @@ public   class  Account {
 
 	public boolean withdraw(double amount) {
 
-		if (balance>=amount ) {
+		if (balance>=amount+DAILY_LIMIT ) {
 			balance-=amount;
 			return true;
 		}
 		return false;
 	}
-
-
+	
+	//account limit
+	final static int DAILY_LIMIT = -1000;
 }
